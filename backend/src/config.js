@@ -1,0 +1,11 @@
+import { config } from "dotenv";
+config();
+
+export default {
+  MONGODB_URI: process.env.MONGODB_URI || "mongodb://localhost/furrysocialmedia",
+  PORT: process.env.PORT || 5000,
+
+
+};
+
+export const SECRET_KEY = "furry"
